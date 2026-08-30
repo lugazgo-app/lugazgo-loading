@@ -1,0 +1,38 @@
+LugazGO - Master vectorial de identidad básica
+
+Archivos principales:
+- lugazgo-logo-principal.svg
+- lugazgo-simbolo-o.svg
+- lugazgo-icono.svg
+- lugazgo-favicon-32.svg
+- lugazgo-favicon-24.svg
+- lugazgo-favicon-16.svg
+- lugazgo-logo-monocromo.svg
+- lugazgo-paleta.svg
+- lugazgo-previsualizacion-vectorial.svg
+
+Geometría maestra O (viewBox 1000 x 1000):
+- Centro: 500,500
+- Radio exterior sobre línea central: 410
+- Diámetro exterior visual: 880 u
+- Grosor aro: 60 u
+- Grosor curvas: 17 u
+- Clip interior: radio 378 u
+- Punto: centro 620,410; radio 36 u; diámetro 72 u
+- Curvas: 2 paths Bézier continuos, diagonal inferior izquierda -> superior derecha
+
+Color:
+- Lugaz: #8B7058
+- G + O: #8F9D76
+- Punto: #C98E72
+
+Favicons:
+- 32 px: master completo
+- 24 px: mismo master, segunda curva oculta
+- 16 px: mismo master, curvas ocultas; O + punto
+
+Notas de producción:
+- Todos los SVG contienen geometría vectorial.
+- No contienen imágenes embebidas, base64 ni filtros raster.
+- El lettering está convertido a paths; no depende de una fuente instalada.
+- La O del logotipo es una instancia geométricamente idéntica del master.
