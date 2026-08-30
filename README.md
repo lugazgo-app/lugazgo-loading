@@ -2,11 +2,13 @@
 
 Paquete maestro de migración para abrir LugazGO como proyecto de Codex.
 
-**Estado del paquete:** cierre técnico mínimo de la Fase 0 completado; maestros SVG, derivados de favicon y paleta básica aprobados y trazados.
+**Estado del paquete:** Fase 0 cerrada y Fase 1 activa para definición documental del producto y del sistema editorial.
 
 **Fecha de la migración:** 30 de agosto de 2026.
 
-**Fase 0:** cerrada el 30 de agosto de 2026; ninguna fase posterior está autorizada.
+**Fase 0:** cerrada el 30 de agosto de 2026.
+
+**Fase 1:** activa desde el 31 de agosto de 2026, sin desarrollo ni investigación territorial.
 
 ## Visión
 
@@ -29,7 +31,11 @@ Está confirmado:
 - símbolo principal canónico en `brand/logo/lugazgo-symbol.svg`;
 - favicon principal en `brand/logo/favicon.svg` y derivados optimizados para 16, 24 y 32 px;
 - paleta básica oficial documentada en `brand/colors/README.md`;
-- alcance de la Fase 0 limitado a logo, símbolo, favicon y paleta básica.
+- alcance de la Fase 0 limitado a logo, símbolo, favicon y paleta básica;
+- MVP con sistema editorial interno y experiencia pública mínima;
+- Notion como fuente maestra editorial del piloto;
+- modelo conceptual, política editorial, flujo y piloto documentados en `docs/phase-1/`;
+- piloto previsto de 40 destinos, todavía sin selección ni investigación.
 
 Queda fuera del cierre de la Fase 0 y no lo bloquea:
 
@@ -39,7 +45,13 @@ Queda fuera del cierre de la Fase 0 y no lo bloquea:
 - tamaños mínimos;
 - aplicaciones de marca y reglas avanzadas.
 
-La geometría y estructura autoritativas son las de los SVG aprobados. No se han creado especificaciones nuevas ni se autoriza reconstruirlos por inferencia.
+La geometría y estructura autoritativas son las de los SVG aprobados. La Fase 1 no modifica la identidad ni autoriza reconstruirla por inferencia.
+
+## Fase 1
+
+`docs/phase-1/` define la propuesta de valor, el MVP, los criterios editoriales, la puntuación, el modelo conceptual de datos, las transiciones, el papel de Notion, la trazabilidad, las licencias y el piloto.
+
+Todavía no existen frontend, backend, base de datos, integración, destinos investigados ni configuración de despliegue. IONOS, DNS, dominio, correo y Netlify quedan fuera de alcance.
 
 ## Maestros canónicos y trazabilidad
 
@@ -82,7 +94,16 @@ LugazGO-Codex-Starter/
 ├── docs/
 │   ├── brand-context.md
 │   ├── decisions.md
-│   └── roadmap.md
+│   ├── roadmap.md
+│   └── phase-1/
+│       ├── README.md
+│       ├── 01-propuesta-valor-y-mvp.md
+│       ├── 02-politica-editorial-y-evaluacion.md
+│       ├── 03-modelo-conceptual-de-datos.md
+│       ├── 04-flujo-editorial-y-notion.md
+│       ├── 05-fuentes-licencias-y-actualizacion.md
+│       ├── 06-plan-piloto.md
+│       └── 07-decisiones-pendientes.md
 ├── data/
 │   └── README.md
 └── app/
@@ -92,11 +113,11 @@ LugazGO-Codex-Starter/
 ## Cómo empezar
 
 1. Abre la carpeta `LugazGO-Codex-Starter` como proyecto en Codex.
-2. Lee `AGENTS.md`, `docs/decisions.md` y `docs/brand-context.md` antes de pedir cambios.
+2. Lee `AGENTS.md`, `docs/decisions.md`, `docs/brand-context.md` y `docs/phase-1/README.md` antes de pedir cambios.
 3. Usa `brand/logo/` como fuente de los maestros visuales y `brand/colors/README.md` como especificación de la paleta básica.
 4. Consulta `brand/logo/README.md` y `docs/decisions.md` para verificar procedencia, SHA-256 y alcance.
 5. Conserva `brand/references/recovered-assets/` como referencia intacta; no muevas ni modifiques esos archivos.
-6. No inicies una aplicación, elijas framework ni actives otra fase sin una decisión explícita posterior.
+6. Usa `docs/phase-1/` para el trabajo documental autorizado; no inicies aplicación, integración, investigación territorial ni elección tecnológica sin una decisión posterior.
 
 No ejecutes una inicialización que sobrescriba `AGENTS.md`; ya contiene las reglas específicas de LugazGO.
 

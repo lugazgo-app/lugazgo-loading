@@ -1,6 +1,5 @@
 # Data — carpeta reservada
 
-Esta carpeta existe para una fase futura y no contiene un modelo de datos.
+Esta carpeta existe para una fase técnica futura y no contiene datos ni esquemas ejecutables.
 
-Durante la fase actual no crear bases de lugares, esquemas, semillas, taxonomías ni integraciones. Consulta `docs/roadmap.md` y espera a que una decisión explícita active esta fase.
-
+El modelo conceptual autorizado está documentado en `docs/phase-1/03-modelo-conceptual-de-datos.md`. Durante la Fase 1 no crear aquí bases de lugares, esquemas, semillas, taxonomías ejecutables, exportaciones ni integraciones. Consulta `docs/roadmap.md` y espera una autorización técnica explícita.

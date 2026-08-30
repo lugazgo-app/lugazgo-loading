@@ -59,6 +59,7 @@ Este documento separa decisiones confirmadas, alcance bloqueado y asuntos pendie
 - **No bloquean el cierre:** tipografía, eslogan, tono editorial, tamaños mínimos, aplicaciones de marca y reglas avanzadas.
 - **Desbloqueo:** Requiere una decisión explícita registrada aquí.
 - **Cierre:** D014 registra el cierre técnico mínimo de esta fase sin autorizar una fase posterior.
+- **Resolución posterior:** D015 autoriza la definición documental de la Fase 1 sin reabrir ni modificar la Fase 0.
 
 ## D007 — Formato de maestros visuales
 
@@ -136,6 +137,84 @@ Este documento separa decisiones confirmadas, alcance bloqueado y asuntos pendie
 - **No bloquean el cierre:** tipografía, eslogan, tono editorial, tamaños mínimos, aplicaciones de marca y reglas avanzadas.
 - **Fases futuras:** El cierre no autoriza una aplicación, la elección de un framework ni el inicio implícito de ninguna fase posterior.
 - **Archivos afectados:** `AGENTS.md`, `README.md`, `brand/logo/README.md`, `brand/colors/README.md`, `docs/brand-context.md`, `docs/decisions.md` y `docs/roadmap.md`.
+- **Resolución posterior:** D015 activa expresamente la Fase 1 documental; este cierre y todos sus límites visuales permanecen vigentes.
+
+## D015 — Activación y alcance de la Fase 1
+
+- **Estado:** Aprobada
+- **Fecha:** 2026-08-31
+- **Decisión:** Se activa la Fase 1 para definir documentalmente la propuesta de valor, el MVP, los criterios editoriales, el modelo conceptual de datos, el flujo de validación, el gobierno de fuentes y el piloto.
+- **Incluye:** sistema editorial interno y definición de una experiencia pública mínima.
+- **Excluye:** frontend, backend, base de datos ejecutable, integración con Notion, investigación territorial, incorporación de destinos, elección de framework o hosting y cambios de identidad visual.
+- **Relación con fases anteriores:** No reabre la Fase 0. El modelo conceptual se incorpora a la Fase 1 por instrucción expresa, sustituyendo la separación anterior del roadmap sin autorizar su implementación técnica.
+- **Archivos afectados:** `AGENTS.md`, `README.md`, `docs/roadmap.md`, `docs/phase-1/`, `app/README.md` y `data/README.md`.
+
+## D016 — MVP, acción principal, métricas e idiomas
+
+- **Estado:** Aprobada
+- **Fecha:** 2026-08-31
+- **Decisión:** El MVP tendrá una capa editorial interna y una experiencia pública con catálogo o tarjetas, mapa, búsqueda, filtros básicos, ficha, guardado local, compartir y apertura segura de indicaciones.
+- **Acción principal:** Encontrar un lugar desconocido relevante, consultar su ficha y guardarlo, compartirlo o mostrar intención de visitarlo.
+- **Métricas iniciales:** 35 % de paso a ficha; 10 % de acciones significativas; 8 de cada 10 participantes encuentran un destino sin ayuda; 7 de cada 10 descubren uno nuevo que considerarían visitar.
+- **Idioma:** La primera versión será española y el modelo permitirá traducciones independientes sin duplicar destinos. Portugués será el siguiente idioma prioritario.
+- **Exclusiones:** cuentas, comentarios, valoraciones, reservas, marketplace, rutas complejas, gamificación, pagos y aportaciones públicas sin moderación.
+- **Archivos afectados:** `docs/phase-1/01-propuesta-valor-y-mvp.md` y `docs/phase-1/03-modelo-conceptual-de-datos.md`.
+
+## D017 — Política de admisión y puntuación editorial
+
+- **Estado:** Aprobada
+- **Fecha:** 2026-08-31
+- **Decisión:** La admisión combina requisitos obligatorios con una puntuación ponderada sobre 100 y umbral inicial de 70.
+- **Pesos:** singularidad e interés diferencial 25; baja masificación 25; valor natural, cultural o patrimonial 20; visita responsable 15; calidad paisajística, narrativa o experiencial 10; calidad y trazabilidad 5.
+- **Vetos:** Un requisito obligatorio incumplido no se compensa. La masificación alta veta la admisión y un riesgo ambiental, cultural, vecinal o de seguridad inaceptable impide publicar.
+- **Categorías y exclusiones:** Se aplican las listas aprobadas en `docs/phase-1/02-politica-editorial-y-evaluacion.md`; los enclaves de municipios grandes quedan fuera del MVP salvo decisión futura.
+- **Archivos afectados:** `docs/phase-1/02-politica-editorial-y-evaluacion.md`.
+
+## D018 — Protección de ubicaciones y espacios sensibles
+
+- **Estado:** Aprobada
+- **Fecha:** 2026-08-31
+- **Decisión:** Cada destino utiliza precisión `EXACTA`, `APROXIMADA` u `OCULTA`; ante una duda razonable sobre el impacto no se publican coordenadas exactas por defecto.
+- **Bloqueos:** Prohibición o cierre, riesgo grave, acceso ilegal, expolio, sensibilidad ambiental o cultural, petición fundada de una autoridad e información insuficiente para una visita segura.
+- **Implicación:** Las coordenadas internas sensibles no forman parte de la proyección pública y las indicaciones solo se habilitan cuando estén autorizadas.
+- **Archivos afectados:** `docs/phase-1/02-politica-editorial-y-evaluacion.md` y `docs/phase-1/03-modelo-conceptual-de-datos.md`.
+
+## D019 — Verificación, vigencia y licencias
+
+- **Estado:** Aprobada
+- **Fecha:** 2026-08-31
+- **Decisión:** Un destino verificado requiere dos fuentes independientes y fiables, fuente oficial o primaria para restricciones cuando aplique, ubicación cruzada, fecha de revisión y trazabilidad de afirmaciones principales.
+- **Vigencia:** 12 meses para acceso, cierres, horarios, permisos y restricciones; 24 meses para información general o confirmación de estabilidad.
+- **Visita:** No es obligatoria para el piloto; se distingue `Verificado documentalmente` de `Visitado por LugazGO`.
+- **Derechos:** Textos originales y medios propios, autorizados o con licencia compatible; material dudoso no se publica.
+- **Archivos afectados:** `docs/phase-1/03-modelo-conceptual-de-datos.md` y `docs/phase-1/05-fuentes-licencias-y-actualizacion.md`.
+
+## D020 — Gobierno editorial y papel de Notion
+
+- **Estado:** Aprobada
+- **Fecha:** 2026-08-31
+- **Decisión:** Durante el piloto, la base de Notion `Destinos` será la fuente maestra editorial. Solo registros aprobados y autorizados para publicación podrán transferirse a la experiencia pública mediante un proceso controlado futuro.
+- **Seguridad:** La web no consultará Notion directamente desde el navegador ni expondrá credenciales.
+- **Autoridad:** Asistentes y herramientas pueden proponer e investigar. El paso a verificado exige revisión de fuentes. Solo Jerónimo Gamero Olivera puede aprobar, publicar, retirar o archivar. Ninguna IA publica automáticamente.
+- **Estados:** `candidato → investigando → verificado → aprobado → publicado → revisión → archivado`.
+- **Archivos afectados:** `docs/phase-1/04-flujo-editorial-y-notion.md`.
+
+## D021 — Muestra piloto
+
+- **Estado:** Aprobada
+- **Fecha:** 2026-08-31
+- **Decisión:** El piloto tendrá 40 destinos, aproximadamente 28 de España y 12 de Portugal, al menos 8 territorios administrativos, máximo 6 por territorio y máximo 40 % de una misma categoría principal.
+- **Diversidad:** Incluirá núcleos habitados, naturaleza, patrimonio cultural e industrial o arqueológico, equilibrando interior, costa, montaña, ruralidad y accesibilidad.
+- **Límite:** No se seleccionan ni investigan destinos todavía. El objetivo futuro de hasta 10 por provincia española y división portuguesa equivalente no se ejecuta antes de validar el piloto.
+- **Archivos afectados:** `docs/phase-1/06-plan-piloto.md`.
+
+## D022 — Infraestructura y servicios externos fuera de alcance
+
+- **Estado:** Bloqueada
+- **Fecha:** 2026-08-31
+- **Decisión:** El dominio oficial y el correo corporativo existen en IONOS, con renovación automática y 2FA configurados. No se modifican IONOS, DNS, dominio, correo ni Netlify durante la Fase 1 documental.
+- **También pendiente:** framework, proveedor de mapas, base de datos, hosting, analítica e integración técnica.
+- **Archivos afectados:** `docs/phase-1/README.md`, `docs/phase-1/07-decisiones-pendientes.md` y `docs/roadmap.md`.
 
 ## A001 — Disponibilidad de activos durante la migración
 

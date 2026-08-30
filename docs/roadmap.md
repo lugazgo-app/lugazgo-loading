@@ -33,33 +33,66 @@ La Fase 0 queda limitada exclusivamente a logotipo, símbolo, favicon y paleta b
 
 El cierre de la Fase 0 no autoriza app, web, Notion, base de datos, modelo funcional, mockups, papelería, señalética, extensiones de campaña ni elección de framework. Todo ello requiere una decisión posterior explícita.
 
+D015 autoriza posteriormente la definición documental de la Fase 1. No modifica ni reabre los activos o límites visuales cerrados aquí.
+
 ---
 
 ## Fase 1 — Sistema de lugares y conocimiento
 
-**Estado:** Futura; no autorizada.  
-**Dirección conocida:** Reunir y organizar información sobre lugares.  
-**Sin decidir:** herramienta concreta —incluido Notion—, criterios editoriales, flujo de revisión, taxonomía y alcance.
+**Estado:** Activa para definición documental desde el 2026-08-31.
 
-Esta fase solo podrá comenzar mediante una nueva decisión explícita; el cierre de la Fase 0 no la activa automáticamente.
+**Objetivo:** Definir el producto y el sistema editorial antes de cualquier desarrollo.
+
+**Fuente principal:** `docs/phase-1/`.
+
+### Entregables
+
+- propuesta de valor y alcance del MVP;
+- funciones imprescindibles y exclusiones;
+- categorías, requisitos, vetos y rúbrica editorial;
+- modelo conceptual de datos preparado para traducciones;
+- estados, transiciones, permisos y papel de Notion;
+- política de fuentes, licencias, sensibilidad y actualización;
+- plan piloto de 40 destinos;
+- registro de decisiones pendientes.
+
+### Alcance operativo
+
+Notion será la fuente maestra editorial durante el piloto. La base se llama `Destinos`, pero no se modifica ni integra todavía. El sistema editorial y la experiencia pública se especifican documentalmente, sin construirlos.
+
+### Exclusiones
+
+- frontend, backend y base de datos ejecutable;
+- integración, exportación o sincronización real con Notion;
+- investigación o incorporación de destinos concretos;
+- prototipos, pantallas o mockups;
+- framework, proveedor de mapas, hosting o analítica;
+- cambios de identidad visual;
+- IONOS, DNS, dominio, correo y Netlify.
+
+La Fase 1 no termina ni escala automáticamente: necesita resolver los pendientes críticos, ejecutar el piloto en una autorización posterior y recibir aprobación humana.
 
 ---
 
-## Fase 2 — Modelo de datos
+## Fase 2 — Preparación técnica e integración de datos
 
-**Estado:** Futura; no autorizada.  
-**Dependencia:** Requisitos y contenido de la Fase 1.  
-**Sin decidir:** entidades, campos, fuentes, arquitectura, almacenamiento, privacidad y tecnología.
+**Estado:** Futura; no autorizada.
 
-No crear esquemas ni archivos de datos funcionales mientras esta fase siga sin autorización.
+**Dependencia:** Modelo conceptual, flujo editorial y decisiones críticas de la Fase 1.
+
+**Sin decidir:** almacenamiento, formato público, validación ejecutable, sincronización con Notion, seguridad, privacidad, recuperación y tecnología.
+
+La Fase 1 define entidades y campos de forma conceptual. No crear esquemas ejecutables, integraciones ni datos de destinos mientras esta fase técnica siga sin autorización.
 
 ---
 
 ## Fase 3 — Producto o aplicación LugazGO
 
-**Estado:** Futura; no autorizada.  
-**Dependencia:** Identidad básica cerrada y modelo de datos aprobado.  
-**Sin decidir:** funcionalidades, plataformas, experiencia de usuario, arquitectura, tecnología, monetización y calendario.
+**Estado:** Futura; no autorizada.
+
+**Dependencia:** Identidad básica cerrada, Fase 1 validada y preparación técnica autorizada.
+
+**Sin decidir:** diseño detallado, arquitectura, tecnología, monetización y calendario. El alcance funcional inicial está definido en `docs/phase-1/01-propuesta-valor-y-mvp.md`.
 
 No crear código, prototipos ni mockups de la aplicación mientras esta fase siga sin autorización.
 
