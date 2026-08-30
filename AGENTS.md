@@ -4,11 +4,11 @@ Este archivo es la constitución de trabajo del proyecto. Se aplica a todo el re
 
 ## 1. Objetivo del repositorio
 
-Mantener una fuente maestra, versionable y verificable de LugazGO. En la fase actual el repositorio solo sirve para consolidar la identidad visual básica.
+Mantener una fuente maestra, versionable y verificable de LugazGO. La identidad visual básica de la Fase 0 está cerrada; ninguna fase posterior está autorizada de forma implícita.
 
-## 2. Fase actual: bloqueada
+## 2. Fase 0 cerrada; fases posteriores bloqueadas
 
-La fase activa comprende exclusivamente:
+La Fase 0 cerrada comprende exclusivamente:
 
 - logotipo principal;
 - símbolo;
@@ -26,7 +26,7 @@ No desarrollar ni diseñar todavía:
 - señalética;
 - piezas de campaña, redes sociales u otras extensiones de marca.
 
-Las carpetas `app/` y `data/` son reservas estructurales. Mientras esta fase siga bloqueada, solo pueden contener documentación de espera.
+Las carpetas `app/` y `data/` son reservas estructurales. Hasta que una fase posterior se autorice expresamente, solo pueden contener documentación de espera.
 
 ## 3. Fuentes de verdad y prioridad
 
@@ -45,7 +45,7 @@ Una idea marcada como **Pendiente**, **Propuesta** o **No disponible** no es una
 - El nombre se escribe `LugazGO`, respetando exactamente mayúsculas y minúsculas.
 - La marca se centra en descubrir lugares con encanto, tranquilos, poco masificados y menos explotados.
 - La personalidad definida es minimalista, eco-friendly, premium, misteriosa y curiosa.
-- La dirección cromática es suave, orgánica y pastel. Los valores de color exactos no están disponibles en este paquete.
+- La dirección cromática es suave, orgánica y pastel. La paleta básica oficial está documentada en `brand/colors/README.md`.
 - La `O` distintiva incorpora curvas topográficas que la atraviesan diagonalmente, con lectura tipo `ø`.
 - La `O` contiene un punto de ubicación aproximadamente en la zona central/superior derecha.
 - La descripción de la `O` fija el concepto, no autoriza a inventar su geometría exacta.
@@ -67,7 +67,7 @@ Antes de realizar cambios:
 
 1. leer `docs/decisions.md` y `docs/brand-context.md`;
 2. comprobar si existen maestros auténticos en `brand/logo/`;
-3. confirmar que la tarea pertenece a la fase actual;
+3. confirmar que la tarea está expresamente autorizada por `docs/decisions.md` y `docs/roadmap.md`;
 4. identificar cualquier dato exacto que falte.
 
 Durante el trabajo:
@@ -88,7 +88,7 @@ Después de un cambio aprobado:
 
 Detenerse y solicitar confirmación cuando:
 
-- la petición salga de la identidad visual básica;
+- la petición pretenda iniciar una fase posterior sin autorización explícita;
 - sea necesario inventar una especificación no aprobada;
 - falte el SVG maestro que habría que modificar;
 - dos fuentes aprobadas entren en conflicto;
@@ -99,4 +99,3 @@ Detenerse y solicitar confirmación cuando:
 - No sobrescribir este `AGENTS.md` mediante una inicialización automática.
 - No eliminar placeholders hasta que su ausencia haya quedado resuelta o documentada.
 - No guardar secretos, credenciales ni datos personales en el repositorio.
-

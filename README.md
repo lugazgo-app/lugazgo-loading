@@ -2,9 +2,11 @@
 
 Paquete maestro de migración para abrir LugazGO como proyecto de Codex.
 
-**Estado del paquete:** estructura y contexto consolidados; activos vectoriales recuperados y ordenados, pendientes de validación como maestros.  
-**Fecha de la migración:** 30 de agosto de 2026.  
-**Fase activa:** identidad visual básica, con alcance bloqueado.
+**Estado del paquete:** cierre técnico mínimo de la Fase 0 completado; maestros SVG, derivados de favicon y paleta básica aprobados y trazados.
+
+**Fecha de la migración:** 30 de agosto de 2026.
+
+**Fase 0:** cerrada el 30 de agosto de 2026; ninguna fase posterior está autorizada.
 
 ## Visión
 
@@ -23,29 +25,33 @@ Está confirmado:
 - personalidad minimalista, eco-friendly, premium, misteriosa y curiosa;
 - dirección cromática suave, orgánica y pastel;
 - concepto de la `O` distintiva con curvas topográficas diagonales tipo `ø` y un punto de ubicación aproximadamente central/superior derecho;
-- alcance actual limitado a logo, símbolo, favicon y paleta básica.
+- logotipo principal canónico en `brand/logo/lugazgo-primary.svg`;
+- símbolo principal canónico en `brand/logo/lugazgo-symbol.svg`;
+- favicon principal en `brand/logo/favicon.svg` y derivados optimizados para 16, 24 y 32 px;
+- paleta básica oficial documentada en `brand/colors/README.md`;
+- alcance de la Fase 0 limitado a logo, símbolo, favicon y paleta básica.
 
-No está confirmado o no está aprobado todavía:
+Queda fuera del cierre de la Fase 0 y no lo bloquea:
 
-- qué SVG recuperado debe actuar como maestro canónico de logo, símbolo y favicon;
-- valores cromáticos exactos;
 - tipografía;
-- geometría exacta de las curvas, el punto y el resto del logotipo;
-- variantes o reglas de aplicación más amplias.
+- eslogan;
+- tono editorial;
+- tamaños mínimos;
+- aplicaciones de marca y reglas avanzadas.
 
-Por tanto, los archivos recuperados se mantienen como referencias trazables y **no se presentan automáticamente como maestros aprobados**.
+La geometría y estructura autoritativas son las de los SVG aprobados. No se han creado especificaciones nuevas ni se autoriza reconstruirlos por inferencia.
 
-## Activos recuperados pendientes de validación
+## Maestros canónicos y trazabilidad
 
-La estructura sigue esperando estos tres SVG confirmados en `brand/logo/`:
+`brand/logo/` contiene los tres maestros confirmados:
 
 - `lugazgo-primary.svg` — logotipo principal;
 - `lugazgo-symbol.svg` — símbolo independiente;
-- `favicon.svg` — favicon maestro.
+- `favicon.svg` — favicon maestro basado en la versión optimizada de 32 px.
 
-Se localizaron 16 SVG y 3 PDF en dos conjuntos posteriores a la migración. Están inventariados, sin modificar, en `brand/references/recovered-assets/`. Consulta su `README.md` y `brand/logo/README.md` antes de elegir o copiar un maestro.
+También contiene `lugazgo-favicon-16.svg`, `lugazgo-favicon-24.svg` y `lugazgo-favicon-32.svg` como derivados válidos por tamaño. `brand/logo/README.md` registra el archivo de origen y el SHA-256 de cada maestro y derivado.
 
-El kit recuperado también contiene una paleta con nombres y valores HEX. Esos datos permanecen pendientes de validación y no sustituyen una aprobación explícita.
+Los SVG de `brand/references/recovered-assets/` se conservan intactos. Las copias canónicas coinciden byte a byte con sus originales y se validaron como XML.
 
 ## Estructura
 
@@ -55,7 +61,13 @@ LugazGO-Codex-Starter/
 ├── README.md
 ├── brand/
 │   ├── logo/
-│   │   └── README.md
+│   │   ├── README.md
+│   │   ├── lugazgo-primary.svg
+│   │   ├── lugazgo-symbol.svg
+│   │   ├── favicon.svg
+│   │   ├── lugazgo-favicon-16.svg
+│   │   ├── lugazgo-favicon-24.svg
+│   │   └── lugazgo-favicon-32.svg
 │   ├── colors/
 │   │   └── README.md
 │   └── references/
@@ -81,10 +93,10 @@ LugazGO-Codex-Starter/
 
 1. Abre la carpeta `LugazGO-Codex-Starter` como proyecto en Codex.
 2. Lee `AGENTS.md`, `docs/decisions.md` y `docs/brand-context.md` antes de pedir cambios.
-3. Revisa los activos recuperados y valida expresamente qué variantes son las oficiales.
-4. Copia los SVG aprobados a `brand/logo/` sin rasterizarlos ni reinterpretarlos; conserva los originales y registra el mapeo en `docs/decisions.md`.
-5. Documenta los valores exactos de la paleta únicamente cuando hayan sido aprobados.
-6. Trabaja solo en logo, símbolo, favicon y paleta hasta que una nueva decisión desbloquee otra fase.
+3. Usa `brand/logo/` como fuente de los maestros visuales y `brand/colors/README.md` como especificación de la paleta básica.
+4. Consulta `brand/logo/README.md` y `docs/decisions.md` para verificar procedencia, SHA-256 y alcance.
+5. Conserva `brand/references/recovered-assets/` como referencia intacta; no muevas ni modifiques esos archivos.
+6. No inicies una aplicación, elijas framework ni actives otra fase sin una decisión explícita posterior.
 
 No ejecutes una inicialización que sobrescriba `AGENTS.md`; ya contiene las reglas específicas de LugazGO.
 

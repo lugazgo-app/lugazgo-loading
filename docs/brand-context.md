@@ -1,6 +1,6 @@
 # LugazGO — Contexto de marca consolidado
 
-Este documento resume únicamente el contexto confirmado durante la migración. No es un manual de marca completo y no rellena decisiones todavía abiertas.
+Este documento resume únicamente el contexto confirmado durante la migración y las decisiones posteriores registradas. No es un manual de marca completo y no rellena decisiones todavía abiertas.
 
 ## Núcleo de la marca
 
@@ -20,9 +20,9 @@ Estos atributos son criterios de dirección. No autorizan por sí solos solucion
 
 ### Color
 
-La paleta debe sentirse suave, orgánica y pastel.
+La paleta oficial mantiene una dirección suave, orgánica y pastel: Tierra Suave `#8B7058`, Verde Salvia `#8F9D76`, Azul Brumoso `#91B5C8`, Verde Liquen `#C1CCAD`, Marfil Cálido `#F1E5D2`, Tierra Oscura `#55483D` y Terracota Mineral `#C98E72`.
 
-No están disponibles los colores exactos, sus códigos, nombres, jerarquía ni combinaciones. Esos datos permanecen pendientes y no deben deducirse automáticamente.
+`brand/colors/README.md` es la especificación de la paleta básica. No se han aprobado jerarquías, combinaciones, equivalencias ni reglas avanzadas de uso.
 
 ### Elemento distintivo: la O
 
@@ -33,11 +33,11 @@ La `O` de LugazGO es un elemento característico de la identidad:
 - el resultado tiene una lectura visual tipo `ø`;
 - incorpora un punto de ubicación aproximadamente en la zona central/superior derecha.
 
-La posición indicada es aproximada porque no estaba disponible el SVG maestro. No se han confirmado el número de curvas, su trazo, el ángulo exacto, las proporciones, el tamaño del punto ni su posición precisa.
+La descripción anterior sigue siendo conceptual. La geometría y estructura exactas son las contenidas en `brand/logo/lugazgo-primary.svg` y `brand/logo/lugazgo-symbol.svg`; no deben reconstruirse a partir del texto.
 
 ## Arquitectura mínima de activos
 
-La fase actual solo contempla:
+La Fase 0 cerrada contempló exclusivamente:
 
 1. logotipo principal;
 2. símbolo;
@@ -52,8 +52,8 @@ Los tres activos gráficos deben mantenerse como SVG maestros. Los formatos rast
 - No redibujar la `O` solo a partir de la descripción si el resultado va a presentarse como oficial.
 - No añadir símbolos de montaña, hojas, brújulas, carreteras u otros motivos por asociación temática sin aprobación.
 - No elegir una tipografía por inferencia.
-- No convertir “eco-friendly”, “premium” o “pastel” en una paleta concreta sin aprobación.
-- No multiplicar variantes o aplicaciones antes de cerrar los cuatro activos básicos.
+- No inferir jerarquías o reglas cromáticas más allá de la paleta oficial aprobada.
+- No multiplicar variantes o aplicaciones sin una decisión posterior explícita.
 
 ## Información todavía no definida
 
@@ -63,12 +63,8 @@ No se encontraron decisiones aprobadas sobre:
 - propuesta verbal o eslogan;
 - tono de voz editorial;
 - tipografía;
-- paleta exacta;
-- geometría final del logotipo;
-- composición exacta de símbolo y favicon;
-- versiones de color o fondos permitidos;
+- versiones adicionales de color o fondos permitidos;
 - tamaños mínimos, márgenes o reglas de accesibilidad;
-- aplicaciones de marca fuera de la fase actual.
+- aplicaciones de marca fuera de la Fase 0.
 
-Estas ausencias son deliberadamente visibles. Deben resolverse mediante decisiones explícitas, no mediante suposiciones de Codex.
-
+Estas ausencias no bloquean el cierre de la Fase 0. Si se abordan en el futuro, deben resolverse mediante decisiones explícitas, no mediante suposiciones de Codex.

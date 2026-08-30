@@ -4,43 +4,34 @@ El roadmap distingue el trabajo autorizado ahora de las direcciones futuras. Una
 
 ## Fase 0 — Identidad visual básica
 
-**Estado:** Activa y bloqueada a su alcance.  
-**Objetivo:** Consolidar los cuatro componentes básicos sin ampliar el sistema de marca.
+**Estado:** Cerrada el 2026-08-30.
 
-### Entregables
+**Objetivo cumplido:** Consolidar los cuatro componentes básicos sin ampliar el sistema de marca.
 
-- logotipo principal en SVG;
-- símbolo en SVG;
-- favicon en SVG;
-- paleta básica con valores exactos aprobados.
+### Entregables cerrados
 
-### Situación de partida
+- logotipo principal: `brand/logo/lugazgo-primary.svg`;
+- símbolo principal: `brand/logo/lugazgo-symbol.svg`;
+- favicon principal: `brand/logo/favicon.svg`;
+- derivados de favicon optimizados para 16, 24 y 32 px en `brand/logo/`;
+- paleta básica oficial en `brand/colors/README.md`.
 
-- El concepto y la dirección de marca están documentados.
-- Los tres SVG maestros no estaban disponibles durante la migración.
-- Posteriormente se recuperaron 16 SVG y 3 PDF, ya inventariados en `brand/references/recovered-assets/`, pero aún no se ha aprobado qué archivos deben actuar como maestros canónicos.
-- La dirección cromática está definida, pero sus valores exactos están pendientes.
+### Resultado de cierre
 
-### Próximas acciones permitidas
+- El logotipo y el símbolo proceden de los SVG expresamente aprobados de `brand/references/recovered-assets/integration-wordmark/`.
+- El favicon principal procede de la versión optimizada de 32 px; las variantes de 16, 24 y 32 px se conservan como derivados válidos para sus tamaños.
+- Los originales recuperados permanecen intactos y las copias canónicas coinciden byte a byte con ellos.
+- Todos los SVG copiados son XML válido.
+- Los nombres, valores HEX y límites de la paleta básica están documentados.
+- `docs/decisions.md` y `brand/logo/README.md` registran procedencia y SHA-256.
 
-1. Validar la procedencia y precedencia de los SVG recuperados.
-2. Confirmar cuáles corresponden a logo, símbolo y favicon sin modificarlos.
-3. Registrar el mapeo entre nombres originales y nombres canónicos antes de incorporarlos a `brand/logo/`.
-4. Documentar la paleta exacta cuando exista una aprobación explícita.
-5. Resolver únicamente los detalles necesarios de estos cuatro entregables.
+### Alcance del cierre
 
-### Criterio de cierre
+La Fase 0 queda limitada exclusivamente a logotipo, símbolo, favicon y paleta básica. La tipografía, el eslogan, el tono editorial, los tamaños mínimos, las aplicaciones de marca y las reglas avanzadas no forman parte de este cierre ni lo bloquean.
 
-La fase puede considerarse terminada cuando:
+### Exclusiones
 
-- existen maestros SVG auténticos o expresamente aprobados para los tres activos;
-- la paleta básica tiene valores exactos aprobados;
-- `docs/decisions.md` refleja las aprobaciones y archivos finales;
-- no hay activos provisionales presentados como definitivos.
-
-### Exclusiones durante esta fase
-
-No iniciar app, web, Notion, base de datos, mockups, papelería, señalética ni extensiones de campaña.
+El cierre de la Fase 0 no autoriza app, web, Notion, base de datos, modelo funcional, mockups, papelería, señalética, extensiones de campaña ni elección de framework. Todo ello requiere una decisión posterior explícita.
 
 ---
 
@@ -50,7 +41,7 @@ No iniciar app, web, Notion, base de datos, mockups, papelería, señalética ni
 **Dirección conocida:** Reunir y organizar información sobre lugares.  
 **Sin decidir:** herramienta concreta —incluido Notion—, criterios editoriales, flujo de revisión, taxonomía y alcance.
 
-Esta fase solo podrá comenzar tras cerrar o desbloquear expresamente la Fase 0 y registrar una nueva decisión.
+Esta fase solo podrá comenzar mediante una nueva decisión explícita; el cierre de la Fase 0 no la activa automáticamente.
 
 ---
 
@@ -60,7 +51,7 @@ Esta fase solo podrá comenzar tras cerrar o desbloquear expresamente la Fase 0 
 **Dependencia:** Requisitos y contenido de la Fase 1.  
 **Sin decidir:** entidades, campos, fuentes, arquitectura, almacenamiento, privacidad y tecnología.
 
-No crear esquemas ni archivos de datos funcionales durante la fase actual.
+No crear esquemas ni archivos de datos funcionales mientras esta fase siga sin autorización.
 
 ---
 
@@ -70,7 +61,7 @@ No crear esquemas ni archivos de datos funcionales durante la fase actual.
 **Dependencia:** Identidad básica cerrada y modelo de datos aprobado.  
 **Sin decidir:** funcionalidades, plataformas, experiencia de usuario, arquitectura, tecnología, monetización y calendario.
 
-No crear código, prototipos ni mockups de la aplicación durante la fase actual.
+No crear código, prototipos ni mockups de la aplicación mientras esta fase siga sin autorización.
 
 ---
 

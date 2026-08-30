@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="16" height="16" shape-rendering="geometricPrecision">
+<defs>
+  <clipPath id="clipInner"><circle cx="500" cy="500" r="378"/></clipPath>
+</defs>
+<g>
+  <circle id="aro-o" cx="500" cy="500" r="410" fill="none" stroke="#8F9D76" stroke-width="60"/>
+  
+  <circle id="punto-localizacion" cx="620" cy="410" r="36" fill="#C98E72"/>
+</g>
+</svg>

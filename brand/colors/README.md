@@ -1,26 +1,19 @@
-# Colores — especificación pendiente
+# Colores — paleta oficial
 
-## Dirección aprobada
+**Estado:** aprobada el 2026-08-30.
 
-La paleta de LugazGO debe ser:
+## Paleta básica
 
-- suave;
-- orgánica;
-- pastel.
+| Color | HEX |
+|---|---|
+| Tierra Suave | `#8B7058` |
+| Verde Salvia | `#8F9D76` |
+| Azul Brumoso | `#91B5C8` |
+| Verde Liquen | `#C1CCAD` |
+| Marfil Cálido | `#F1E5D2` |
+| Tierra Oscura | `#55483D` |
+| Terracota Mineral | `#C98E72` |
 
-## Datos no disponibles
+Esta especificación fija únicamente los nombres y valores HEX de la paleta básica. No define jerarquías, combinaciones, contrastes, equivalencias RGB/CMYK/Pantone ni reglas avanzadas de aplicación; esos elementos quedan fuera del cierre de la Fase 0.
 
-No están aprobados o accesibles:
-
-- nombres de color;
-- valores HEX;
-- valores RGB;
-- equivalencias CMYK o Pantone;
-- jerarquía entre colores;
-- combinaciones y reglas de contraste.
-
-No generes valores por aproximación. Cuando se apruebe la paleta, registra primero la decisión en `docs/decisions.md` y añade aquí una especificación versionable.
-
-## Material recuperado
-
-El kit localizado incluye `brand/references/recovered-assets/vector-kit/lugazgo-paleta.svg` y declara valores concretos. Se conserva como referencia técnica, pero esos valores todavía no sustituyen esta especificación pendiente porque su procedencia y aprobación no se han confirmado.
+La decisión de aprobación está registrada en `docs/decisions.md`. La lámina recuperada `brand/references/recovered-assets/vector-kit/lugazgo-paleta.svg` se conserva intacta como material de procedencia y no sustituye esta especificación textual.
