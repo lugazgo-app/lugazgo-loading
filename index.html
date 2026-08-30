@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LugazGO — Próximamente</title>
+<meta name="description" content="LugazGO está preparando una nueva forma de descubrir lugares que aún conservan su esencia. Próximamente.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="LugazGO — Próximamente">
+<meta property="og:description" content="Donde el mapa deja de ser obvio.">
+<style>
+  :root {
+    --bg: #F6F1E7;
+    --text: #6E6A57;
+    --sage: #7C8A66;
+    --olive: #7C7A5C;
+    --earth: #8B7058;
+    --cream-soft: #FBF8F1;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--bg);
+    background-image: url("background-topografia.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+
+  .wrap {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 24px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 640px;
+    width: 100%;
+  }
+
+  .logo {
+    width: min(380px, 85vw);
+    height: auto;
+    display: block;
+  }
+
+  .spacer {
+    height: 44px;
+  }
+
+  .slogan {
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--olive);
+    line-height: 1.35;
+    margin: 0;
+    letter-spacing: 0.2px;
+  }
+
+  .description {
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--text);
+    line-height: 1.6;
+    margin: 22px 0 0;
+    max-width: 480px;
+  }
+
+  .eyebrow {
+    margin: 32px 0 0;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--sage);
+  }
+
+  .cta {
+    margin-top: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 34px;
+    border: 1.5px solid var(--olive);
+    border-radius: 999px;
+    background-color: rgba(251, 248, 241, 0.5);
+    color: var(--olive);
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.3px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  }
+
+  .cta:hover,
+  .cta:focus-visible {
+    background-color: var(--olive);
+    color: var(--cream-soft);
+    transform: translateY(-2px);
+  }
+
+  footer {
+    margin-top: 40px;
+    font-size: 13px;
+    color: var(--text);
+    opacity: 0.7;
+  }
+
+  @media (max-width: 640px) {
+    .slogan {
+      font-size: 24px;
+    }
+
+    .description {
+      font-size: 15px;
+    }
+
+    .spacer {
+      height: 34px;
+    }
+
+    .eyebrow {
+      margin-top: 26px;
+    }
+
+    .cta {
+      margin-top: 24px;
+      padding: 13px 30px;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    footer {
+      margin-top: 30px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <main>
+      <img class="logo" src="lugazgo-primary.svg" alt="LugazGO — logotipo oficial">
+
+      <div class="spacer"></div>
+
+      <p class="slogan">Donde el mapa deja de ser obvio.</p>
+
+      <p class="description">Estamos preparando una nueva forma de descubrir lugares que aún conservan su esencia.</p>
+
+      <p class="eyebrow">Próximamente</p>
+
+      <a class="cta" href="https://instagram.com/lugazgo.app" target="_blank" rel="noopener noreferrer">Síguenos en Instagram</a>
+
+      <footer>© 2026 LugazGO</footer>
+    </main>
+  </div>
+</body>
+</html>
