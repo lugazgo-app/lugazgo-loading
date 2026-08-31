@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="24" height="24" shape-rendering="geometricPrecision">
+<defs>
+  <clipPath id="clipInner"><circle cx="500" cy="500" r="378"/></clipPath>
+</defs>
+<g>
+  <circle id="aro-o" cx="500" cy="500" r="410" fill="none" stroke="#8F9D76" stroke-width="60"/>
+  <path id="curva-topografica-1" d="M 55 805 C 145 765 185 700 275 710 C 344 718 373 663 436 640 C 502 616 548 577 569 518 C 590 459 580 432 620 410 C 663 386 705 389 747 350 C 804 298 832 239 945 205" fill="none" stroke="#8F9D76" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clipInner)"/>
+  <circle id="punto-localizacion" cx="620" cy="410" r="36" fill="#C98E72"/>
+</g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" shape-rendering="geometricPrecision">
+  <defs>
+    <clipPath id="clip-o-interior">
+      <circle cx="500" cy="500" r="378"/>
+    </clipPath>
+  </defs>
+  <g id="simbolo-o-lugazgo">
+    <circle id="aro-exterior" cx="500" cy="500" r="410" fill="none" stroke="#8F9D76" stroke-width="60"/>
+    <path id="curva-topografica-1" d="M 55 805 C 145 765 185 700 275 710 C 344 718 373 663 436 640 C 502 616 548 577 569 518 C 590 459 580 432 620 410 C 663 386 705 389 747 350 C 804 298 832 239 945 205" fill="none" stroke="#8F9D76" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-o-interior)"/>
+    <path id="curva-topografica-2" d="M 28 910 C 108 860 170 828 238 842 C 310 857 336 815 398 790 C 462 764 505 774 548 742 C 595 708 615 654 654 616 C 695 576 754 590 790 548 C 831 501 827 445 865 402 C 900 362 931 326 982 294" fill="none" stroke="#8F9D76" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip-o-interior)"/>
+    <circle id="punto-localizacion" cx="620" cy="410" r="36" fill="#C98E72"/>
+  </g>
+</svg>
