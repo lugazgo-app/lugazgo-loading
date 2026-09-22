@@ -266,3 +266,13 @@ Este documento separa decisiones confirmadas, alcance bloqueado y asuntos pendie
 - **Archivos afectados:** Rutas concretas o “ninguno”.
 - **Sustituye a:** Identificador anterior, si aplica.
 ```
+
+## D024 — Actualización de marca en la landing pública
+
+- **Estado:** Aprobada para la actualización solicitada por el responsable.
+- **Fecha:** 2026-09-22.
+- **Decisión:** Sustituir la landing histórica por la versión revisada en preview, manteniendo CTA, contenido, fondo y CNAME. Aplicar indexación normal en producción.
+- **Procedencia:** Logo `LugazGO_Brand/01_LOGO/SVG/lugazgo-logo-primary-light.svg`, favicon `lugazgo-symbol-light.svg`, colores de `02_COLORS/lugazgo-colors-light.ase`, fuentes WOFF2 de Lugaz Sans v1.0 RELEASE APPROVED (400, 500 y 600). Activos copiados byte a byte, sin redibujar maestros.
+- **Relación con D023:** Sustituye únicamente la conservación provisional del SVG público histórico para esta landing. Los maestros históricos y el resto de límites permanecen intactos.
+- **Archivos:** `index.html`, `lugazgo-primary.svg`, `favicon.svg`, tres fuentes en `brand/fonts/`, README, roadmap y este registro.
+- **Verificación previa:** Preview HTTPS, hashes de assets, carga de fuentes y QA a 1440, 390 y 320 px. El botón conserva `https://instagram.com/lugazgo.app`, apertura en pestaña nueva y `noopener noreferrer`.

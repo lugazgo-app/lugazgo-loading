@@ -132,3 +132,7 @@ No ejecutes una inicialización que sobrescriba `AGENTS.md`; ya contiene las reg
 ## Disciplina de cambios
 
 Toda modificación futura que altere una decisión o un activo aprobado debe quedar registrada en `docs/decisions.md`. Una propuesta no modifica el estado oficial hasta recibir aprobación explícita.
+
+## Actualización de la landing — 2026-09-22
+
+La landing incorpora logo y símbolo light del Brand Pack vigente, paleta oficial light y Lugaz Sans v1.0 (400/500/600). Se conserva el enlace de Instagram, el fondo y CNAME. La publicación mantiene indexación normal; las reglas noindex de la preview no se trasladan a producción.

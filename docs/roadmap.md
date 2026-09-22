@@ -110,3 +110,7 @@ Para activar una fase futura se necesita:
 2. una entrada nueva en `docs/decisions.md` con estado **Aprobada** o **Bloqueada**;
 3. alcance, entregables y exclusiones definidos;
 4. actualización de este roadmap y del estado del `README.md`.
+
+## Actualización de la landing — 2026-09-22
+
+La landing incorpora logo y símbolo light del Brand Pack vigente, paleta oficial light y Lugaz Sans v1.0 (400/500/600). Se conserva el enlace de Instagram, el fondo y CNAME. La publicación mantiene indexación normal; las reglas noindex de la preview no se trasladan a producción.
