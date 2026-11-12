@@ -10,6 +10,32 @@ import xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parents[1]
 ERRORS = []
 INSTAGRAM = "https://instagram.com/lugazgo.app"
+EXPECTED_CSP = {
+    "default-src": ("'none'",),
+    "script-src": ("'none'",),
+    "object-src": ("'none'",),
+    "style-src": ("'unsafe-inline'",),
+    "img-src": ("'self'",),
+    "font-src": ("'self'",),
+    "connect-src": ("'none'",),
+    "base-uri": ("'none'",),
+    "form-action": ("'none'",),
+}
+
+def valid_csp(policy):
+    if not policy.isascii() or re.search(r"[\x00-\x08\x0b\x0e-\x1f\x7f]", policy):
+        return False
+    directives = {}
+    for directive in policy.split(";"):
+        parts = directive.split()
+        if not parts:
+            continue
+        name, *sources = parts
+        name = name.lower()
+        if name in directives:
+            return False
+        directives[name] = tuple(sources)
+    return directives == EXPECTED_CSP
 
 def fail(message):
     ERRORS.append(message)
@@ -24,11 +50,21 @@ def local_asset(value, location):
 class CheckHTML(HTMLParser):
     def __init__(self):
         super().__init__()
-        self.csp = False
+        self.csp_count = 0
+        self.in_head = False
+        self.resource_seen = False
         self.links = 0
+
+    def handle_endtag(self, tag):
+        if tag == "head":
+            self.in_head = False
 
     def handle_starttag(self, tag, pairs):
         attrs = dict(pairs)
+        if tag == "head":
+            self.in_head = True
+        if tag in {"link", "style", "img", "body"}:
+            self.resource_seen = True
         if tag in {"script", "iframe", "object", "embed", "form", "base"}:
             fail(f"unexpected active element {tag}")
         for name, value in pairs:
@@ -36,11 +72,12 @@ class CheckHTML(HTMLParser):
                 fail(f"inline event attribute {name}")
             if value and re.match(r"\s*(javascript|vbscript|data):", value, re.I):
                 fail(f"unsafe attribute URI {name}")
-        if tag == "meta" and attrs.get("http-equiv", "").lower() == "content-security-policy":
-            policy = attrs.get("content", "")
-            self.csp = True
-            if "script-src 'none'" not in policy or "object-src 'none'" not in policy:
-                fail("CSP must disable scripts and objects")
+        if tag == "meta" and (attrs.get("http-equiv") or "").lower() == "content-security-policy":
+            self.csp_count += 1
+            if not self.in_head or self.resource_seen:
+                fail("CSP must appear in head before styles and resources")
+            if len(attrs) != len(pairs) or not valid_csp(attrs.get("content") or ""):
+                fail("CSP directives must match the approved source lists without duplicates")
         if tag in {"img", "link"}:
             resource = attrs.get("src" if tag == "img" else "href")
             if resource:
@@ -77,8 +114,8 @@ def main():
     content = (ROOT / "index.html").read_text(encoding="utf-8")
     parser = CheckHTML()
     parser.feed(content)
-    if not parser.csp:
-        fail("missing CSP")
+    if parser.csp_count != 1:
+        fail("expected exactly one CSP meta element")
     if parser.links != 1:
         fail("expected exactly one approved Instagram destination")
     for resource in re.findall(r"url\(\s*['\"]?([^)'\"\s]+)", content, re.I):
